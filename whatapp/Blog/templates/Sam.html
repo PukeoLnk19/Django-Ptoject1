@@ -1,0 +1,688 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'main51.js' %}">
+    <link rel="stylesheet" href="{% static 'style62.css' %}">
+    <title>whaysapp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+
+            <div class="header">
+                <div class="userimg">
+                    <img id="toglglee81" src="{% static 'img/kp.jpg' %}" class="over">
+                </div>
+                <div class="nav_icons">
+                    <li id="toglglee6"><ion-icon name="sync-circle-outline"></ion-icon></li>
+                    <li id="toglglee3"><ion-icon name="chatbox"></ion-icon></li>
+                    <li id="toglglee"><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                </div>
+            </div>
+
+
+            <div class="box_boxseet" id="asd">
+                <ion-icon name="close-outline" class="box_boxseet_setting"></ion-icon>
+
+                <div class="setting">
+                    <a href="#"><div class="box_setting">New group</div></a>
+                    <a href="#"><div class="box_setting">Starred messages</div></a>
+                    <a href="#"><div class="box_setting">Settings</div></a>
+                    <a href="{% url 'login' %}"><div class="box_setting">Log Out</div></a>
+                </div>
+            </div>
+
+            <div class="box_boxseet81" id="img">
+                <div class="setting8">
+                    <ion-icon name="arrow-back" class="box_boxseet8_setting8"></ion-icon>
+                    <div class="new_chat">
+                        <a href="#"><div class="box_setting3"><h3>Profile</h3></div></a>
+                    </div>
+                </div>
+
+                <div class="img_profile">
+                    <img src="{% static 'img/kp.jpg' %}" alt="">
+                </div>
+                <div class="profile_yourname">
+                    <h4>Your name</h4>
+                    <div class="profile_yourname_name">
+                        <p>Pukeo Laeneeku</p>
+                        <div class="profile_bik">
+                            <ion-icon name="create"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile_yourname_name1">
+                    <div class="profile_text">
+                        <p>This is not your username or pin. This name will be visible to your WhatsApp contacts</p>
+                    </div>
+                </div>
+                <div class="profile_yourname">
+                    <h4>About</h4>
+                    <div class="profile_yourname_name">
+                        <p>Laos</p>
+                        <div class="profile_bik1">
+                            <ion-icon name="create"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ellipsis-vertical -->
+
+            <div class="box_boxseet6" id="a">
+                
+
+                <div class="mystatus">
+                    <div class="settin">
+                        <img src="{% static 'img/kp.jpg' %}" alt="">
+                        <div>
+                            <a href="#"><div class="box_setting9"><h4>My Status</h4></div></a>
+                            <p class="status">No update</p>
+                        </div>
+                        
+                        
+                    </div>
+                    <br>
+                    <hr>
+                    <p class="status2">RECENT</p>
+                    <div class="setting6">
+                        <img src="{% static 'img/5.webp' %}" alt="">
+                        <div>
+                             <a href="#"><div class="box_setting8"><h4>Oudone PKL</h4></div></a>
+                             <p class="status">today at 8:00</p>
+                        </div>
+                    </div>
+                    <div class="setting6">
+                        <img src="{% static 'img/2.jpg' %}" alt="">
+                        <div>
+                            <a href="#"><div class="box_setting8"><h4>kongchan</h4></div></a>
+                            <p class="status">today at 9:15</p>
+                        </div>
+                    </div>
+                    <div class="setting6">
+                        <img src="{% static 'img/4.jpg' %}" alt="">
+                        <div>
+                            <a href="#"><div class="box_setting8"><h4>Sam</h4></div></a>
+                            <p class="status">today at 3:30</p>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <p class="status2">VIEWED</p>
+                    <div class="setting6">
+                        <img src="{% static 'img/6.jpg' %}" alt="">
+                        <div>
+                            <a href="#"><div class="box_setting8"><h4>Done</h4></div></a>
+                            <p class="status">yesterday at 10:00</p>
+                        </div>
+                    </div>
+                    <div class="setting6">
+                        <img src="{% static 'img/iATER.jpg' %}" alt="">
+                        <div>
+                            <a href="#"><div class="box_setting8"><h4>Yao</h4></div></a>
+                            <p class="status">yesterday at 12:25</p>
+                        </div>
+                    </div>
+                    <div class="setting6"> 
+                        <img src="{% static 'img/3.webp' %}" alt="">
+                        <div>
+                            <a href="#"><div class="box_setting8"><h4>Ladsami</h4></div></a>
+                            <p class="status">yesterday at 4:30</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="myview">
+                    <ion-icon name="close-outline" class="box_boxsee6_setting6"></ion-icon>
+                </div>
+                
+            </div>
+
+
+            <!-- chatbox -->
+
+            <div class="box_boxseet3" id="as">
+                
+                <div class="setting1">
+                    <ion-icon name="arrow-back" class="box_boxseet3_setting3"></ion-icon>
+                    <div class="new_chat">
+                        <a href="#"><div class="box_setting3"><h3>New chat</h3></div></a>
+                    </div>
+                </div>
+
+                <div class="search_chat">
+                    <div>
+                        <input type="text" placeholder="Search or start new chat">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="setting2">
+                    <ion-icon name="people" class="box_people"></ion-icon>
+                    <a href="#"><div class="box_setting15"><h3>New group</h3></div></a>
+                    
+                </div>
+
+                <div class="setting3">
+                    <img src="{% static 'img/5.webp' %}" alt="">
+                    <div>
+                        <a href="#"><div class="box_setting5"><h4>Oudone</h4></div></a>
+                        <p>Laos</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="setting3">
+                    <img src="{% static 'img/2.jpg' %}" alt="">
+                    <div>
+                        <a href="#"><div class="box_setting5"><h4>kongchan</h4></div></a>
+                        <p>...</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="setting3">
+                    <img src="{% static 'img/4.jpg' %}" alt="">
+                    <div>
+                        <a href="#"><div class="box_setting5"><h4>Sam</h4></div></a>
+                        <p>...</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="setting3">
+                    <img src="{% static 'img/6.jpg' %}" alt="">
+                    <div>
+                        <a href="#"><div class="box_setting5"><h4>Yao</h4></div></a>
+                        <p>...</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="setting3">
+                    <img src="{% static 'img/6.jpg' %}" alt="">
+                    <div>
+                        <a href="#"><div class="box_setting5"><h4>Yao</h4></div></a>
+                        <p>...</p>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+            </div>
+
+
+
+            <div class="search_chat">
+                <div>
+                    <input type="text" placeholder="Search or start new chat">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="chatlist">
+
+                <a href="{% url 'home' %}" class="block ">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/4.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Oudone PKL</h4>
+                            <p class="time">12:00</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>doi Sabaidee</p>
+                        </div>
+
+                    </div>
+
+                </a>
+            
+
+
+                <a href="{% url 'chan' %}" class="block unread">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/3.webp' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Kongchan</h4>
+                            <p class="time">11:30</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>Hi</p>
+                            <!-- <b>1</b> -->
+                        </div>
+
+                    </div>
+                </a>
+
+
+                <div class="block active">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/5.webp' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Sam</h4>
+                            <p class="time">10:00</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>doi Sabaidee</p>
+                           
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="{% url 'yao' %}" class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/6.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Yao</h4>
+                            <p class="time">Yesterday</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>Hello</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="{% url 'done' %}" class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/2.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Done</h4>
+                            <p class="time">Yesterday</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>doi Sabaidee</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/iATER.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Ladsami</h4>
+                            <p class="time">1/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>What are you doin?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/2.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Vick</h4>
+                            <p class="time">2/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>What did you say?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/3.webp' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Chansone</h4>
+                            <p class="time">3/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>Where do you study?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/4.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Nin</h4>
+                            <p class="time">4/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>What are you doing?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/5.webp' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Inkeo</h4>
+                            <p class="time">5/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>Do you have time?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/6.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Nid</h4>
+                            <p class="time">6/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>What are you doing?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/bacwhats.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Sone</h4>
+                            <p class="time">7/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>What are you doing?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="imgbx">
+                        <img src="{% static 'img/4.jpg' %}" class="cover">
+                    </div>
+
+                    <div class="details">
+
+                        <div class="listHead">
+                            <h4>Souk</h4>
+                            <p class="time">8/9/2022</p>
+                        </div>
+
+                        <div class="message_p">
+                            <p>What are you doing?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="rightSide">
+
+            <div class="header">
+                <div class="imgText">
+                    <div class="userimg">
+                        <img id="toglglee10" src="{% static 'img/5.webp' %}" class="over">
+                    </div>
+                    <h4>Sam<br><span>Online</span></h4>
+                </div>
+
+                <div class="nav_icons">
+                    <li id="toglglee11"><ion-icon name="search-outline"></ion-icon></li>
+                    <li id="toglgle"><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                </div>
+            </div>
+
+            <div class="box_boxseet2" id="asd2">
+                <ion-icon name="close-outline" class="box_boxseet_setting"></ion-icon>
+
+                <div class="setting">
+                    <a href="#"><div class="box_setting2">Contact info</div></a>
+                    <a href="#"><div class="box_setting2">Select messages</div></a>
+                    <a href="#"><div class="box_setting2">Close chat</div></a>
+                    <a href="#"><div class="box_setting2">Mute notifications</div></a>
+                    <a href="#"><div class="box_setting2">Disapparing messages</div></a>
+                    <a href="#"><div class="box_setting2">Clear messages</div></a>
+                    <a href="#"><div class="box_setting2">Delete chat</div></a>
+                </div>
+            </div>
+
+
+            <div class="chatBox">
+
+                <div class="message my_message">
+                    <p>Sabaidee<br><span>9:15</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>doi Sabaidee<br><span>9:15</span></p>
+                </div>
+
+                <div class="message my_message">
+                    <p>h y u la<br><span>9:16</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Non lin u mee yung la<br><span>9:16</span></p>
+                </div>
+
+                <div class="message my_message">
+                    <p>br meu ni pai sai la<br><span>9:17</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>ma ha khoy nae<br><span>9:17</span></p>
+                </div>
+
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br><span>10:00</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Hahahaha<br><span>10:10</span></p>
+                </div>
+
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit<br><span>10:30</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit<br><span>10:35</span></p>
+                </div>
+
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit<br><span>10:40</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit<br><span>10:45</span></p>
+                </div>
+
+                <div class="message my_message">
+                    <p>Lorem ipsum dolor sit<br><span>10:50</span></p>
+                </div>
+                <div class="message frnd_message">
+                    <p>Lorem ipsum dolor sit<br><span>11:10</span></p>
+                </div>
+
+            </div>
+
+        
+
+
+
+
+            <!-- document -->
+
+
+            <div class="document" id="do">
+                <div class="document_icon_camera">
+                    <div>
+                        <ion-icon name="camera" class="icon_camera"></ion-icon>
+                    </div>
+                    <div>
+                        <ion-icon name="document" class="icon_camera1"></ion-icon>
+                    </div>
+
+                    <div>
+                        <ion-icon name="image" class="icon_camera2"></ion-icon>
+                    </div>
+                </div>
+                <ion-icon name="close-outline" class="document_icon_camera_icon_camera"></ion-icon>
+           </div>
+
+           
+            <div class="chatbox_input">
+                <div class="box_boxseet15" id="happy">
+                    <div class="box_happy_happy">
+                        <ion-icon name="happy-outline" class="setting15"></ion-icon>
+                        <ion-icon name="happy" class="setting15"></ion-icon>
+                    </div>
+                    <ion-icon name="close-outline" class="box_boxseet15_setting15"></ion-icon>
+                </div>
+                <ion-icon id="box_happy" name="happy-outline"></ion-icon>
+                <ion-icon id="document_chat" name="attach-outline"></ion-icon>
+                <input type="text" placeholder="Type a message">
+                <ion-icon name="send"></ion-icon>
+                <ion-icon name="mic"></ion-icon>
+            </div>
+
+        </div>
+
+        <div class="box_boxseet10" id="im">
+            <div class="setting10">
+                <ion-icon name="close-outline" class="box_boxseet10_setting10"></ion-icon>
+                <div class="new_contact_info">
+                    <a href="#"><div class="box_setting10"><h4>Contact info</h4></div></a>
+                </div>
+            </div>
+
+            <div class="img_profile_contact">
+                <img src="{% static 'img/4.jpg' %}" alt="">
+                <div class="profile_contact1">
+                    <h4>Oudone</h4>
+                    <div class="profile_contaact_name">
+                        <p>+856 20 77 554 421</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="profile_contact">
+                <h4>About</h4>
+                <div class="profile_contact_name">
+                    <p>Laos</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Search Messages  -->
+
+        <div class="box_boxseet11" id="i">
+            <div class="setting10">
+                <ion-icon name="close-outline" class="box_boxseet11_setting11"></ion-icon>
+                <div class="new_contact_info">
+                    <a href="#"><div class="box_setting11"><h4>Search Messages</h4></div></a>
+                </div>
+            </div>
+
+            <div class="search_chat">
+                <div>
+                    <input type="text" placeholder="Search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+    </div>
+    <script src="{% static 'main51.js' %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

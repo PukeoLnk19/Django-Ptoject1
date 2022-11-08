@@ -1,0 +1,145 @@
+
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <title>whaysapp</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="userimg">
+            <img src="{% static 'img/kp.jpg' %}" class="over">
+        </div>
+        <div class="nav_icons">
+            <li><ion-icon name="sync-circle-outline"></ion-icon></li>
+            <li><ion-icon name="chatbox"></ion-icon></li>
+            <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+        </div>
+    </div>
+
+    <div class="search_chat">
+        <div>
+            <input type="text" placeholder="Search or start new chat">
+            <ion-icon name="search-outline"></ion-icon>
+        </div>
+    </div>
+
+    {% for i in news %}
+                <div class="chatlist">
+                    
+                    <div class="block active">
+
+                        <div class="imgbx">
+                            <img src="{{i.image.url}}" class="cover">
+                        </div>
+
+                        <div class="details">
+
+                            <div class="listHead">
+                                <h4>{{i.title}}</h4>
+                                <p class="time">{{i.date}}</p>
+                            </div>
+
+                            <div class="message_p">
+                                <p>{{i.desc}}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="rightSide">
+
+                        <div class="header">
+                            <div class="imgText">
+                                <div class="userimg">
+                                    <img src="{{i.image.url}}" class="over">
+                                </div>
+                                <h4>{{i.title}}<br><span>Online</span></h4>
+                            </div>
+            
+                            <div class="nav_icons">
+                                <li><ion-icon name="search-outline"></ion-icon></li>
+                                <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                            </div>
+                        </div>
+            
+            
+                        <div class="chatBox">
+            
+                            <div class="message my_message">
+                                <p>Sabaidee<br><span>9:15</span></p>
+                            </div>
+                            <div class="message frnd_message">
+                                <p>doi Sabaidee<br><span>9:15</span></p>
+                            </div>
+            
+                            <div class="message my_message">
+                                <p>h y u la<br><span>9:16</span></p>
+                            </div>
+                            <div class="message frnd_message">
+                                <p>Non lin u mee yang la<br><span>9:16</span></p>
+                            </div>
+            
+                            <div class="message my_message">
+                                <p>br meu ni pai sai la<br><span>9:17</span></p>
+                            </div>
+                            <div class="message frnd_message">
+                                <p>ma ha khony nae<br><span>9:17</span></p>
+                            </div>
+            
+                            <div class="message my_message">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br><span>10:00</span></p>
+                            </div>
+                            <div class="message frnd_message">
+                                <p>Hahahaha<br><span>10:10</span></p>
+                            </div>
+            
+                            <div class="message my_message">
+                                <p>Lorem ipsum dolor sit<br><span>10:30</span></p>
+                            </div>
+                            <div class="message frnd_message">
+                                <p>Lorem ipsum dolor sit<br><span>10:35</span></p>
+                            </div>
+            
+                            <div class="message my_message">
+                                <p>Lorem ipsum dolor sit<br><span>10:40</span></p>
+                            </div>
+                            <div class="message frnd_message">
+                                <p>Lorem ipsum dolor sit<br><span>10:45</span></p>
+                            </div>
+            
+                            <div class="message my_message">
+                                <p>Lorem ipsum dolor sit<br><span>10:50</span></p>
+                            </div>
+                            <div class="message frnd_message">
+                                <p>Lorem ipsum dolor sit<br><span>11:10</span></p>
+                            </div>
+            
+                        </div>
+            
+                    
+            
+                        <div class="chatbox_input">
+                            <ion-icon name="happy-outline"></ion-icon>
+                            <ion-icon name="attach-outline"></ion-icon>
+                            <input type="text" placeholder="Type a message">
+                            <ion-icon name="send"></ion-icon>
+                            <ion-icon name="mic"></ion-icon>
+                        </div>
+            
+                    </div>
+                    {% endfor %}
+                </div>
+</body>
+</html>
+{% endblock %}
